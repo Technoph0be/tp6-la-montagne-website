@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Inter-Extrabold;
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Merriweather-Light;
+  src: url(../fonts/Merriweather-Light.ttf)
+}
+
+
+//variables
+
+$color1:#848887;
+$white: #F3F3F3;
+$black: #1a1919;
+
+$font-display: Inter-Extrabold, sans-serif;
+$font-text: Merriweather-Light, serif;
+
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background: url(../img/bg.jpg) fixed center/cover;
+padding: 0% 10%;
+
+// margin: 0 auto;
+
+&:before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $black;
+  animation: animBefore 1.0s ease forwards;
+  animation-delay: 0.15s;
+
+  @keyframes animBefore{
+    to {
+      opacity:0;
+    
+    }
+  }
+}
+}
+
+p {
+  font-family: $font-text;
+}

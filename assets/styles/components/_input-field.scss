@@ -1,0 +1,30 @@
+.input-field{
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap:12px;
+
+  input, textarea {
+    font-family: $font-text;
+    color: $color1;
+    font-size: 0.8rem;
+    height: 32px;
+    padding-left: 6px;
+    border: solid 1px rgb(210, 210, 210);
+    border-radius: 4px;
+      &:focus {
+          outline:none;
+        }
+  }
+
+  textarea {
+    padding-top: 6px;
+  resize: none;
+  height: fit-content;
+  min-height: 120px;
+     }
+
+
+
+}

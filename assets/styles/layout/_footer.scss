@@ -1,0 +1,48 @@
+footer {
+  background: $white;
+  margin: 25px 0 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .footer-title{
+  text-transform: uppercase;
+  color: $color1;
+  font-family: $font-display;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  }
+
+  form{
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .contact-details{
+  padding: 70px 50px;
+  }
+
+  .button{
+    width: fit-content;
+  }
+
+  p{
+  font-family: $font-text;
+  color: $color1;
+  font-size: 0.8rem;
+  height: 32px;
+  padding-left: 6px;
+  line-height: 1.5rem;
+  }
+
+  .contact-details{
+    border-left: solid 1px rgb(210, 210, 210);    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  }
+
+
+}
